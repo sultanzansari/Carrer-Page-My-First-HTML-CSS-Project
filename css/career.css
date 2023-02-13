@@ -1,0 +1,937 @@
+/* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+
+   html,
+   body,
+   div,
+   span,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   abbr,
+   address,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   samp,
+   small,
+   strong,
+   sub,
+   sup,
+   var,
+   b,
+   i,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       outline: 0;
+       font-size: 100%;
+       vertical-align: baseline;
+       background: transparent
+   }
+   body {
+       line-height: 1
+   }
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+       display: block
+   }
+   nav ul {
+       list-style: none
+   }
+   blockquote,
+   q {
+       quotes: none
+   }
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+       content: none
+   }
+   a {
+       margin: 0;
+       padding: 0;
+       font-size: 100%;
+       vertical-align: baseline;
+       background: transparent
+   }
+   ins {
+       background-color: #ff9;
+       color: #000;
+       text-decoration: none
+   }
+   mark {
+       background-color: #ff9;
+       color: #000;
+       font-style: italic;
+       font-weight: bold
+   }
+   del {
+       text-decoration: line-through
+   }
+   abbr[title],
+   dfn[title] {
+       border-bottom: 1px dotted;
+       cursor: help
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0
+   }
+   hr {
+       display: block;
+       height: 1px;
+       border: 0;
+       border-top: 1px solid #ccc;
+       margin: 1em 0;
+       padding: 0
+   }
+   input,
+   select {
+       vertical-align: middle
+   }
+   *,
+   *:after,
+   *:before {
+       box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+   }
+.wrapper{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+.header-address {
+    width:1920px;
+    margin:0 auto;
+    background-color: #f1f1f1;
+    min-height: 50px;
+}
+
+.header-address ul {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    list-style-type: none;
+}
+
+.header-address ul li {
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+.header-address ul li p {
+    margin:0px 10px;
+    color:#5f686a;
+    font-size: 15px;
+}
+
+.header-address ul li+li::before{
+    content:"|";
+    opacity:0.5;
+    position:absolute;
+    top:9px;
+}
+
+.header-nav{
+    width:1920px;
+    min-height:80px;
+    margin:0 auto;
+    padding:0px 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar{
+    margin-left:10%;
+    min-height: 45px;
+}
+
+.nav-bar ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height:45px;
+}
+
+.nav-bar li a{
+    display: block;
+    text-decoration: none;
+    color:#000;
+    font-size:18px;
+    margin-left:60px;
+    box-sizing: content-box;
+}
+
+ .nav-bar ul li a:hover{
+    border-bottom: 5px solid #3891b7 ;
+    padding:10px 0px;
+    color: #3891b7;
+}
+.logo a{
+    display:block;
+    padding:25px;
+    background-color: #fff;
+    min-height: 130px;
+    position: absolute;
+    top:0%;
+    border-radius:0px 0px 10px 10px;
+    box-sizing: border-box;
+}
+.logo a img{
+    display:block;
+    width:100%;
+}
+
+.call-us{
+    position:relative;
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaf7e8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding:0 20px;
+}
+
+.call-us img{
+    position:absolute;
+    left:-10px;
+    top:10px;
+}
+
+.call-us p{
+    font-size: 18px;
+    color: #204d1a;
+}
+
+/* Main-1*/
+
+.back-img{
+    width:1920px;
+    height:705px;
+    background-image: url("../images/Career-1.jpg");
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bnr-left{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:33%;
+    margin-left: 250px;
+    margin-bottom: 120px;
+}
+.left-1,.left-2{
+    text-align: center;
+    color:#fefefe;
+}
+.left-1{
+    font-size: 66px;
+    padding-bottom: 30px;
+}
+.left-1 b{
+    color:#b1f9a7;
+}
+
+.left-2{
+    font-size: 40px;
+}
+
+.bnr-right{
+    width:520px;
+    height:600px;
+    box-sizing: border-box;
+    padding:0px 50px;
+    margin-right: 40px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.bnr-right input{
+  display: block;
+  width:100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 70px;
+  border-radius: 6px;
+  border: 1px solid #d8d8d8;
+}
+
+.bnr-right input::placeholder{
+    color: #444444;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+.bnr-right h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px 0px;
+}
+
+.bnr-right p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #444444;
+    margin: 35px 0px;
+    text-align: center;
+}
+
+.form-button{
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    width: 420px;
+    height: 70px;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, #53b347 0%, #48b372 100%);
+    margin:0 auto;
+}
+
+/* Main-2 */
+
+.application{
+    width: 1920px;
+    height: 1210px;
+    background-color: #f5f5f5;
+    margin:0 auto;
+}
+
+.app-1,.app-2{
+    width:1400px;
+    margin:0px auto;
+    box-sizing: border-box;
+}
+
+.app-1{
+    padding: 75px 0px;
+}
+
+.app-1 h2{
+    font-size: 40px;
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.app-1 p{
+    height: 100px;
+    font-size: 18px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.app-2{
+    height:680px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 635px;
+    height: 275px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 16px rgba(0,0,0,0.1));
+    background-color: #ffffff;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon{
+    background-repeat: no-repeat;
+    width:160px;
+    height:160px;
+    border-radius: 80px;
+}
+
+.icon1{
+    background-image: url(../images/Career/money\ \(2\).png);
+    background-position:20px 35px;
+    background-color: #b4e4cc;
+}
+
+.icon2{
+    background-image: url(../images/Career/community.png);
+    background-position:20px 35px;
+    background-color: #d2e3ff;
+}
+
+.icon3{
+    background-image: url(../images/Career/connection.png);
+    background-position:25px 25px;
+    background-color: #ffece6;
+}
+
+.icon4{
+    background-image: url(../images/Career/creativity.png);
+    background-position:15px 35px;
+    background-color: #f0ffca;
+}
+
+.data{
+    width:365px;
+    height:160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.data span{
+    font-size: 20px;
+    line-height: 30px;
+    color: #3891b7;
+    font-weight: 800;
+    text-align: center;
+}
+
+.data p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #515151;
+    font-weight: 400;
+}
+
+.app-3{
+    height:205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-button{
+    width: 420px;
+    height: 70px;
+    border:none;
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    border-radius: 6px;
+    filter: drop-shadow(0px 16px 16px rgba(0,0,0,0.29));
+    background-image: linear-gradient(90deg, #e89c3b 0%, #e06153 100%);
+}
+
+/* Main-3 */
+
+.training{
+    width: 1920px;
+    height: 1408px;
+    background-color: #e1f0f4;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-training-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.training-mode{
+    width:850px;
+    height:1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.training-heading{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 235px;
+}
+
+.training-box{
+    height:230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.number{
+    width:98px;
+    display: flex;
+    justify-content: center;
+    font-size: 170px;
+    color: #b5d3e5;
+    font-weight: 800;
+}
+
+.training-detail{
+    width: 650px;
+    height: 195px;
+    border-radius: 20px;
+    background-color: #cee2ee;
+    border: 1px solid #b5d3e5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-description{
+    width: 300px;
+    height: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 35px;
+}
+
+.logo-description h3{
+    font-size: 18px;
+    color: #3063a4;
+    font-weight: 800;
+    line-height: 35px;
+}
+
+.logo-description p{
+    font-size: 16px;
+    color: #5c5c5c;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.training-detail .main-logo{
+    position: relative;
+    width: 100px;
+    height: 190px;
+    background-color: #b5d3e5;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.training-detail .logo1{
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    background-color: #b5d3e5;
+    transform: translate(-70px,22px) rotate(45deg);
+    transform-origin:center;
+    border-radius:15px;
+}
+
+.training-detail .logo2,.training-detail .logo3,.training-detail .logo4,.training-detail .logo5{
+    position: absolute;
+    width: 100px;
+    background-color: #b5d3e5;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px 15px 15px 30px;
+}
+
+.logo2{
+    height: 190px;
+    background-image: url(../images/Career/classroom.png);
+    transform: translate(-20px,0px);
+}
+
+.logo3{
+    height: 180px;
+    background-image: url(../images/Career/videoconference.png);
+    transform: translate(-20px,10px);
+}
+
+.logo4{
+    height: 180px;
+    background-image: url(../images/Career/online-training\ \(1\).png);
+    transform: translate(-20px,10px);
+}
+
+.logo5{
+    height: 190px;
+    background-image: url(../images/Career/presentation\ \(4\).png);
+    transform: translate(-20px,0px);
+}
+
+.form-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 1080px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 17.5px rgba(0,0,0,0.13));
+    background-color: #ffffff;
+    padding:0px 40px;
+    box-sizing: border-box;
+}
+
+.form-heading{
+    width:420px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-heading h2{
+    font-size: 30px;
+    color: #cd2a2a;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.form-heading p{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.form-field input{
+    display:inline-block;
+    width: 420px;
+    height: 70px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding:20px;
+    margin-bottom: 10px;
+}
+
+.form-field input::placeholder{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.form-submit{
+    height:150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-sub{
+    width: 420px;
+    height: 70px;
+    border:none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, #e89c3b 0%, #e06153 100%);
+}
+
+/* Main-4 */
+
+.instructor-container{
+    width: 1920px;
+    height: 500px;
+    background-color: #ded5d0;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.instructor-img{
+    width: 662px;
+    height: 749px;
+    background-image: url(../images/Career/elegant-young-teacher.png);
+    background-repeat: no-repeat;
+    transform: translate(-20px,-247px);
+}
+
+.instructor-detail{
+    width:575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.instructor-heading{
+    height:235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.instructor-heading h2{
+    font-size: 50px;
+    line-height: 65px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.instructor-heading p{
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.instructor-button{
+    height: 100px;
+    position: relative;
+    display:flex;
+    align-items: flex-end;
+}
+
+.instructor-btn{
+    width: 315px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    padding-right: 35px;
+    color: #fff;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #53b347 0%, #15b498 100%);
+    border: 3px solid #f4f4f4;
+}
+
+.instructor-button i{
+    color: #fff;
+    position: absolute;
+    bottom:20px;
+    right:35px;
+}
+
+/* Footer */
+
+.footer-container{
+    width: 1920px;
+    height: 515px;
+    background-color: #141a1e;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer-menu{
+    width: 1500px;
+    height:300px;
+    margin:0 170px 0 260px;
+    box-sizing: border-box;
+    color:#fff;
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+.footer-logo{
+    text-align: center;
+    margin-right: 60px;
+}
+
+.footer-brochure input{
+    width: 259px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(56,145,183,0);
+    background-image: url(../images/Career/download\ copy.png);
+    background-position: 30px 12px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    margin: 35px 0px 15px 0px;
+    border: 2px solid #214c57;
+    font-size: 16px;
+    line-height: 32px;
+    color: #21bce2;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.footer-pay input{
+    width: 259px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3ba02b;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.footer-courses ul,.footer-major ul,.footer-extra ul,.footer-contact ul{
+    list-style-type: none;
+    padding-top:20px;
+}
+
+.footer-courses li,.footer-major li,.footer-extra li,.footer-contact li{
+    font-size: 16px;
+    line-height: 32px;
+    color: #a4aeb5;
+    font-weight: 400;
+}
+
+.footer-courses ,.footer-major ,.footer-extra ,.footer-contact,.footer-logo {
+    width:250px;
+}
+
+.footer-courses h4 ,.footer-major h4,.footer-contact h4{
+    font-size: 16px;
+    color: #21bce2;
+    font-weight: 700;
+}
+
+.footer-extra::before{
+    content: 'text';
+    color:#141a1e;
+    background-color: #141a1e;
+    width:200px;
+    height:16px;
+}
+
+.footer-main{
+    width: 1920px;
+    height: 79px;
+    background-color: #23292d;
+    margin:0 auto;
+}
+
+.footer-copy{
+    width:1400px;
+    height:79px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy-para{
+    font-size: 14px;
+    color: #61717c;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.footer-copy-media ul{
+    list-style-type: none;
+}
+
+.footer-copy-media li{
+    display: inline-block;
+}
+
+.footer-copy-media li a{
+    display: block;
+    width:40px;
+    height:40px;
+}
+
+.lin{
+    background-image: url(../images/Career/linkedin\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.in{
+    background-image: url(../images/Career/instagram\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.tw{
+    background-image: url(../images/Career/twitter\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.fb{
+    background-image: url(../images/Career/facebook\ \(1\)\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.yu{
+    background-image: url(../images/Career/youtube\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.bl{
+    background-image: url(../images/Career/blogger\ copy.png);
+    background-repeat: no-repeat;
+}
+
+.pi{
+    background-image: url(../images/Career/pinterest\ \(1\).png);
+    background-repeat: no-repeat;
+    /* background-color: #61717c; */
+}
